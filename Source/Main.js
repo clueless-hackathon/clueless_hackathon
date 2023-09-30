@@ -8,7 +8,7 @@ function redirect(){
 var button = document.getElementById("print");
         button.addEventListener("click", function () {
             var doc = new jsPDF();
-            var pdf = document.querySelector(".toPrint");
+            var pdf = document.querySelector(".GFG");
             doc.fromHTML(pdf);
             doc.save("Recipe.pdf");
         });
