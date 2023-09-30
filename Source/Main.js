@@ -49,3 +49,9 @@ document.getElementById("dessert").addEventListener("click", redirectDessert);
 function redirectDessert(){ 
     window.location = "./dessert.html"; 
 }
+
+document.getElementById("back").addEventListener("click", backButton);
+
+function backButton() {
+  window.location.href = "./index.html";
+}

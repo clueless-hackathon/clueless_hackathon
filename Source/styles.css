@@ -8,9 +8,8 @@ img {
 body{
     background-color: #fffee9;
     color: black;
-}
-.bold {
-    font-weight: bold;
+    font-family: "Caveat";
+    font-size: 20px;
 }
 .center {
     text-align: center;
@@ -24,21 +23,8 @@ body{
     text-align: right;
     align-items: right;
 }
-.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make the container full height of the viewport */
-}
-.comic {
-    font-family: "Comic Sans MS"
-}
-body {
-    font-family: "Caveat";
-    font-size: 20px;
-}
 .button{
-    background-color: #878f8c;
+    background-color: #fffee9;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -47,10 +33,40 @@ body {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
+    background-image: url('https://cdn.discordapp.com/attachments/1157409271781277696/1157772081660960919/Untitled-13.png?ex=6519d2c6&is=65188146&hm=4b12b0a6688234eb6d0a786d7c12d6d5b34bfe14c732e6ee857ff816c41dfd06');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 155px; /* Adjust the width and height as needed */
+    height: 60px; /* Adjust the width and height as needed */
+    border: none;
+    cursor: pointer;
+  }
+  .sbutton{
+    background-color: #878f8c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
   }
 .selected {
     background-color: orange;
 }
 .highlight-button:hover {
     background-color: #5c6360;
+}
+.back {
+    background-color: #878f8c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    align-items: left;
 }
