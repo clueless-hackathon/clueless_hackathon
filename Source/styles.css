@@ -78,3 +78,12 @@ body{
     border-radius: 5px;
     align-items: left;
 }
+.pic {
+    display: inline-block; /* Display the link as a block element */
+    background-image: url("https://cdn.discordapp.com/attachments/1157409271781277696/1157775687353106432/chef2.png"); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: contain; /* Adjust the image size to fit within the container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    width: 80px; /* Set the width of the container (adjust as needed) */
+    height: 80px; /* Set the height of the container (adjust as needed) */
+    /* Customize positioning using margin or positioning properties as needed */
+}
