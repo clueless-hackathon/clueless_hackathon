@@ -11,5 +11,14 @@ buttons.forEach(button => {
 
     // Add the 'select' class to the clicked button
     button.classList.add('selected');
+    if (id = create) {
+        button.classList.add('create')
+    }
   });
 });
+
+document.getElementById("create").addEventListener("click", redirect);
+
+function redirect(){ 
+    window.location = "./create.html"; 
+}
