@@ -1,0 +1,53 @@
+<html>
+<head>
+    <!-- Title, font, and CSS setup -->
+    <title>Recipe Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body class="center">
+    <form>
+        <form>
+            <div id="1">
+                <h1>Recipe Name:</h1>
+                <label for="rn">Recipe Name:</label><br>
+                <input type="text" id="rn" name="rn"><br>
+            </div>
+            <div id="3">
+               <h3><label for="org">Meal Classification:</label></h3> 
+                <select name="org" id="org">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Appetizer">Appetizer</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+            </div>
+            <div id="4">
+               <h3> <label for="org">Dietary Restrictions: </label><br></h3>
+                <input type="checkbox" id="dr2" name="dr2" value="Dairy Free">
+                <label for="dr2">Dairy Free</label><br>
+    
+                <input type="checkbox" id="dr1" name="dr1" value="Gluten Free">
+                <label for="dr1">Gluten Free</label><br>
+    
+                <input type="checkbox" id="dr3" name="dr3" value="Red Meat">
+                <label for="dr3">Red Meat</label><br>
+    
+                <input type="checkbox" id="dr4" name="dr4" value="Vegan">
+                <label for="dr4">Vegan</label><br>
+    
+                <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
+                <label for="dr5">Vegetarian</label><br>
+            </div> <br>
+            <div id="2">
+                <h3>Directions:</h3>
+                <input type="textbox" id="direct" name="direct"><br>
+            </div>
+        </form>
+        <script src = "main.js"></script>
+    </body>
+</html>
