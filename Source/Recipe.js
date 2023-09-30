@@ -42,6 +42,9 @@ function addRecipe(title, author, ingredients, instructions){
     recipeList.push(new Recipe(title, author, ingredients, instructions));
 }
 
-
-
 var recipeList = [];
+let button = document.getElementById("button");
+button.addEventListener("click", function() {
+    let inputs = document.getElementsByClassName("Input");
+    addRecipe(new Recipe(inputs[0], inputs[1], inputs[2], inputs[3]));
+});
