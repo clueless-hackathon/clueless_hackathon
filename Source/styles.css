@@ -1,0 +1,11 @@
+img {
+    width: 200px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
