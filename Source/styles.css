@@ -56,7 +56,7 @@ body{
     background-color: orange;
 }
 .highlight-button:hover {
-    background-color: #5c6360;
+    color: #5c6360;
 }
 .back {
     background-color: #878f8c;
