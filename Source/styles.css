@@ -29,25 +29,27 @@ body{
 
 .button{
     background-color: #fffee9;
+    font-family: "Caveat";
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 10px;
     background-image: url('https://cdn.discordapp.com/attachments/1157409271781277696/1157772081660960919/Untitled-13.png?ex=6519d2c6&is=65188146&hm=4b12b0a6688234eb6d0a786d7c12d6d5b34bfe14c732e6ee857ff816c41dfd06');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 156px; /* Adjust the width and height as needed */
-    height: 61px; /* Adjust the width and height as needed */
+    width: 180px; /* Adjust the width and height as needed */
+    height: 70px; /* Adjust the width and height as needed */
     border: none;
     cursor: pointer;
   }
 
   .sbutton{
     background-color: #878f8c;
+    font-family: "Caveat";
     border: none;
     color: white;
     padding: 8px 16px;
