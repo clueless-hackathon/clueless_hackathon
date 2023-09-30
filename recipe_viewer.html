@@ -14,7 +14,8 @@
             <h2>Add your own recipe</h2>
         </header>
         
-        <main>
+        <main class="toPrint">
+            <div >
             <div id = "ingredients">
                 <h3>Ingredients</h3>
                 <table>
@@ -41,8 +42,10 @@
                     <li>Instruction 3</li>
                 </ol> 
             </div>
-            <button class = "button">Print recipe</button>
+        </div>
         </main>
+        <button id= "print">Print recipe</button>
     </body>
-    <script src = "print.js"> </script>
+    <script src = "./Source/print.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 </html>
