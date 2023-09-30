@@ -45,6 +45,7 @@
                 <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
                 <label for="dr5">Vegetarian</label><br>
             </div> <br>
+            
             <div id="2">
                 <h3>Ingredients</h3>
                 <script>
@@ -56,44 +57,28 @@
                         document.getElementById("ingred").appendChild(li);
                     }
                 </script>
-                <div id="clickMe" onclick="clickMe()">
-                    <div id="5">
-                        <ul id="ingred">
-                        </ul>
-                        <input type="text" id="add" size="50" />
-                        <input type="button" id="btnAdd" value="Add" class = sbutton
-                            onclick="addItem()">
-                        <br>
-                        <div id="7">
-                            <h3>Directions:</h3>
-                        <script>
-                            function addDirection(){
-                                var li = document.createElement("LI");  
-                                var input = document.getElementById("dirAdd");
-                                li.innerHTML = input.value;
-                                input.value = "";
-                        
-                                document.getElementById("direct").appendChild(li);
-                            }
-                        </script>
-                            <div id="clickMe" onclick="clickMe()">
-
-                            </div>
-                            <div id="6">
-                                <ul id="direct">
-
-                                </ul>
-                                <input type="text" id="dirAdd" size="50" />
-                                <input type="button" id="btnAdd" value="Add" class = "sbutton highlight-button"
-                                    onclick="addDirection()">
-                            </div>
-
-                         <br>
-                       <div id="8" >
-                        <input type="submit" class = "button highlight-button">
-                       </div>
+                <ul id="ingred">
+                </ul>
+                <input type="text" id="add" size="50" />
+                <input type="button" id="btnAdd" value="Add" class = "sbutton highlight-button" onclick="addItem()">
+                <br>
+                <h3>Directions:</h3>
+                <script>
+                    function addDirection(){
+                    var li = document.createElement("LI");  
+                    var input = document.getElementById("dirAdd");
+                    li.innerHTML = input.value;
+                    input.value = "";
+                    document.getElementById("direct").appendChild(li);
+                }
+                </script>
+                <ul id="direct">
+                </ul>
+                <input type="text" id="dirAdd" size="50" />
+                <input type="button" id="btnAdd" value="Add" class = "sbutton highlight-button" onclick="addDirection()">
+                <br>
+                <input type="submit" class = "button highlight-button">
             </div>
-
         </form>
     </body>
     <script src = "./Source/main.js"></script>
