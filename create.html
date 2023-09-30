@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 </head>
+    <div class="toPrint">
     <body class="center">
         <header>
             <h1> <a class="active" href="./index.html">Recipes for the Clueless</a> </h1>
@@ -15,8 +16,8 @@
         <form>
             <div id="1">
                 <h1>Recipe Name:</h1>
-                <label for="rn">Recipe Name:</label><br>
-                <input type="text" id="rn" name="rn"><br>
+                <label for="recipe-name">Recipe Name:</label><br>
+                <input type="text" id="recpie-name" name="recipe-name"><br>
             </div>
             <div id="3">
                <h3><label for="org">Meal Classification:</label></h3> 
@@ -48,6 +49,7 @@
             <div id="2">
                 <h3>Ingredients</h3>
                 <script>
+
                     function addItem(){
                         var li = document.createElement("LI");  
                         var input = document.getElementById("add");
@@ -93,8 +95,11 @@
                         <input type="submit" class = "button highlight-button">
                        </div>
             </div>
-
+        </div>
         </form>
+        <button id= "print">Print recipe</button>
     </body>
     <script src = "./Source/main.js"></script>
+    <script src = "./Source/print.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 </html>
