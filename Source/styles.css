@@ -78,9 +78,3 @@ body{
     border-radius: 5px;
     align-items: left;
 }
-
-.positioned-text {
-    position: absolute;
-    top: 560px; /* Adjust the top value to change the vertical position */
-    left: 825px; /* Adjust the left value to change the horizontal position */
-}

@@ -42,33 +42,46 @@
             <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
             <label for="dr5">Vegetarian</label><br>
         </div>
-        <div id="section2" class = "left">
-            <h3 class = "left">Ingredients</h3>
+        <style>
+            #section2, #section7{
+            display: inline-block;
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+        </style>
+        <div id="section2">
+            <h3 class = "center">Ingredients</h3>
             <ul id="ingred">
+                
                 <!-- Ingredient items will be added here dynamically -->
             </ul>
-
                 <input type="text" id="addIngredient" size="50" />
-                <input type="button" value="Add" class="sbutton" onclick="addItem()" >
+                <br><br>
+                <input type="button" value="Add" class="sbutton highlight-button" onclick="addItem()" >
 
         </div>
-        <div id="section7" class = "center">
+        <div id="section7">
+            <h3>Measurements</h3>
+            <ul id="mes">
+                <!-- Measurements items will be added here dynamically -->
+            </ul>
+            <input type="text" id="mesAdd" size="50" />
+            <br><br>
+            <input type="button" value="Add" class="sbutton highlight-button" onclick="addMes()">
+        </div>
+        <div id="section9" class = centered>
             <h3>Directions:</h3>
             <ul id="direct">
                 <!-- Direction items will be added here dynamically -->
             </ul>
             <input type="text" id="dirAdd" size="50" />
+            <br><br>
             <input type="button" value="Add" class="sbutton highlight-button" onclick="addDirection()">
         </div>
-        <div id="section9">
-            <h3>Measurements</h3>
-            <ul id="mes">
-                <!-- Measurement items will be added here dynamically -->
-            </ul>
-            <input type="text" id="mesAdd" size="50" />
-            <input type="button" value="Add" class="sbutton" onclick="addMes()">
-        </div>
         <div id="section8">
+            <br><br>
             <input type="submit" class="button highlight-button">
         </div>
     </form>
