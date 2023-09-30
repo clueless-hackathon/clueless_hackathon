@@ -1,7 +1,11 @@
-var recipeList = [];
-
-
 class Recipe {
+    /** A class that defines a Recipe card.
+     * 
+     * @param {String} title 
+     * @param {String} author 
+     * @param {String[]} ingredients 
+     * @param {String} instructions 
+     */
     constructor(title, author, ingredients, instructions) {
         this.title = title,
         this.author = author;
@@ -24,6 +28,10 @@ class Recipe {
     getInstructions(){
         return this.instructions;
     }
+
+    compareTo(other){
+        return this.title.localeCompare(other.title); 
+    }
 }
 
 function addRecipe(recipe){
@@ -34,3 +42,6 @@ function addRecipe(title, author, ingredients, instructions){
     recipeList.push(new Recipe(title, author, ingredients, instructions));
 }
 
+
+
+var recipeList = [];
