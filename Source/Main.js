@@ -8,6 +8,5 @@ var button = document.getElementById("print");
             var doc = new jsPDF();
             var pdf = document.querySelector(".toPrint");
             doc.fromHTML(pdf);
-            doc.save("Recipe");
             doc.save("Recipe.pdf");
         });
