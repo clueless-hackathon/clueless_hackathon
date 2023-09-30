@@ -10,14 +10,6 @@ body{
     background-color: #fffee9;
     color: black;
 }
-/* Style the button on hover */
-
-.highlight-button:hover {
-    background-color: #5c6360;
-}
-.selected {
-    background-color: #5c6360;
-}
 .bold {
     font-weight: bold;
 }
@@ -57,3 +49,9 @@ body {
     font-size: 16px;
     border-radius: 10px;
   }
+.selected {
+    background-color: orange;
+}
+.highlight-button:hover {
+    background-color: #5c6360;
+}
