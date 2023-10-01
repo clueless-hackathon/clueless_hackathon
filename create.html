@@ -15,11 +15,11 @@
     <form>
         <div id="section1">
             <h3>Recipe Name:</h3>
-            <input type="text" id="rn" name="rn"><br>
+            <input type="text" id="rn" class = "text-input" name="rn"><br>
         </div>
         <div id="section3">
             <h3><label for="org">Meal Classification:</label></h3>
-            <select name="org" id="org">
+            <select name="org" id="org" class = "text-input">
                 <option value="Breakfast">Breakfast</option>
                 <option value="Lunch">Lunch</option>
                 <option value="Dinner">Dinner</option>
@@ -29,15 +29,15 @@
         </div>
         <div id="section4">
             <h3><label for="org">Dietary Restrictions:</label></h3>
-            <input type="checkbox" id="dr2" name="dr2" value="Dairy Free">
+            <input type="checkbox" id="dr2" name="dr2" value="Dairy Free" class = "checkbox-input">
             <label for="dr2">Dairy Free</label><br>
-            <input type="checkbox" id="dr1" name="dr1" value="Gluten Free">
+            <input type="checkbox" id="dr1" name="dr1" value="Gluten Free" class = "checkbox-input">
             <label for="dr1">Gluten Free</label><br>
-            <input type="checkbox" id="dr3" name="dr3" value="Red Meat">
+            <input type="checkbox" id="dr3" name="dr3" value="Red Meat" class = "checkbox-input">
             <label for="dr3">Red Meat</label><br>
-            <input type="checkbox" id="dr4" name="dr4" value="Vegan">
+            <input type="checkbox" id="dr4" name="dr4" value="Vegan" class = "checkbox-input">
             <label for="dr4">Vegan</label><br>
-            <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
+            <input type="checkbox" id="dr5" name="dr5" value="Vegetarian" class = "checkbox-input">
             <label for="dr5">Vegetarian</label><br>
         </div>
         <div id="section2">
@@ -66,7 +66,7 @@
         </div>
         <div id="section8">
             <br>
-            <input type="submit" class="button highlight-button">
+            <input type="button" value = "Submit" id = "button" class="button highlight-button">
         </div>
     </form>
 
@@ -77,6 +77,7 @@
             var input = document.getElementById("addIngredient");
             li.innerHTML = input.value;
             input.value = "";
+            li.className = "list-input";
             document.getElementById("ingred").appendChild(li);
         }
 
@@ -85,6 +86,7 @@
             var input = document.getElementById("dirAdd");
             li.innerHTML = input.value;
             input.value = "";
+            li.className = "list-input";
             document.getElementById("direct").appendChild(li);
         }
 
@@ -93,8 +95,78 @@
             var input = document.getElementById("mesAdd");
             li.innerHTML = input.value;
             input.value = "";
+            li.className = "list-input";
             document.getElementById("mes").appendChild(li);
         }
+        class Recipe {
+            /** A class that defines a Recipe card.
+            * 
+            * @param {String} title 
+            * @param {String} mealClassification 
+            * @param {String[]} ingredients 
+            * @param {String} instructions 
+            */
+            constructor(title, mealClassification, dietaryRestrictions, ingredients, instructions) {
+                this.title = title,
+                this.mealClassification = mealClassification;
+                this.dietaryRestrictions = dietaryRestrictions;
+                this.ingredients = ingredients;
+                this.instructions = instructions;
+            }
+
+            getTitle() {
+                return this.title;
+            }
+
+            getMealClassification(){
+                return this.mealClassification
+            }
+
+            getDietaryRestrictions(){
+                return this.dietaryRestrictions
+            }
+
+            getIngredients(){
+                return this.ingredients;
+            }
+
+            getInstructions(){
+                return this.instructions;
+            }
+
+            compareTo(other){
+                return this.title.localeCompare(other.title); 
+            }
+        }
+
+        function addRecipe(recipe){
+            recipeList.push(recipe);
+        }
+
+        function addRecipe(title, author, ingredients, instructions){
+            recipeList.push(new Recipe(title, author, ingredients, instructions));
+        }
+
+        var recipeList = [];
+        let button = document.getElementById('button');
+        button.addEventListener("click", function() {
+            let textInputs = document.getElementsByClassName("text-input");
+            let listInputs = document.getElementsByClassName("list-input");
+            let checkboxInputs = document.getElementsByClassName("checkbox-input");
+
+            for(var i = 0; i < inputs.length; i++){
+                console.log(textInputs[i].value);
+            }
+            
+            for(var i = 0; i < textInputs.length; i++){
+                console.log(textInputs[i].value);
+            }
+
+            for(var i = 0; i < checkboxInputs.length; i++){
+                console.log(checkboxInputs[i].value);
+            }
+
+        });
     </script>
 </body>
 </html>
