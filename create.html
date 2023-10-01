@@ -11,15 +11,29 @@
     <body class="center">
         <header>
             <h1> <a class="active" href="./index.html">Recipes for the Clueless</a> </h1>
-            <h2> Recipe title</h2>
         </header>
         <form>
             <div id="1">
                 <h1>Recipe Name:</h1>
-                <label for="recipe-name">Recipe Name:</label><br>
-                <input type="text" id="recpie-name" name="recipe-name"><br>
+                <script>
+                    function addName(){
+                        var li = document.createElement("LI");  
+                        var input = document.getElementById("nameAdd");
+                        li.innerHTML = input.value;
+                        input.value = "";
+                        document.getElementById("name").appendChild(li);
+                    }
+                </script>
+                <div id="clickMe" onclick="clickMe()">
+                    <div id="4">
+                        <ul id="name">
+                        </ul>
+                        <input type="text" id="nameAdd" size="50" />
+                        <input type="button" id="btnAdd" value="Add" class = sbutton
+                            onclick="addName()">
+                        <br>
             </div>
-            <div id="3">
+            <!--<div id="3">
                <h3><label for="org">Meal Classification:</label></h3> 
                 <select name="org" id="org">
                     <option value="Breakfast">Breakfast</option>
@@ -45,11 +59,10 @@
     
                 <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
                 <label for="dr5">Vegetarian</label><br>
-            </div> <br>
+            </div> <br>-->
             <div id="2">
                 <h3>Ingredients</h3>
                 <script>
-
                     function addItem(){
                         var li = document.createElement("LI");  
                         var input = document.getElementById("add");
