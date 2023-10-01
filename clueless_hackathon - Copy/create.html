@@ -1,0 +1,118 @@
+<html>
+<head>
+    <!-- Title, font, and CSS setup -->
+    <title>Recipe Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+    <div class="toPrint">
+    <body class="center">
+        <header>
+            <h1> <a class="active" href="./index.html">Recipes for the Clueless</a> </h1>
+        </header>
+        <form>
+            <div id="1">
+                <h1>Recipe Name:</h1>
+                <script>
+                    function addName(){
+                        var li = document.createElement("LI");  
+                        var input = document.getElementById("nameAdd");
+                        li.innerHTML = input.value;
+                        input.value = "";
+                        document.getElementById("name").appendChild(li);
+                    }
+                </script>
+                <div id="clickMe" onclick="clickMe()">
+                    <div id="4">
+                        <ul id="name">
+                        </ul>
+                        <input type="text" id="nameAdd" size="50" />
+                        <input type="button" id="btnAdd" value="Add" class = sbutton
+                            onclick="addName()">
+                        <br>
+            </div>
+            <!--<div id="3">
+               <h3><label for="org">Meal Classification:</label></h3> 
+                <select name="org" id="org">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Appetizer">Appetizer</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+            </div>
+            <div id="4">
+               <h3> <label for="org">Dietary Restrictions: </label><br></h3>
+                <input type="checkbox" id="dr2" name="dr2" value="Dairy Free">
+                <label for="dr2">Dairy Free</label><br>
+    
+                <input type="checkbox" id="dr1" name="dr1" value="Gluten Free">
+                <label for="dr1">Gluten Free</label><br>
+    
+                <input type="checkbox" id="dr3" name="dr3" value="Red Meat">
+                <label for="dr3">Red Meat</label><br>
+    
+                <input type="checkbox" id="dr4" name="dr4" value="Vegan">
+                <label for="dr4">Vegan</label><br>
+    
+                <input type="checkbox" id="dr5" name="dr5" value="Vegetarian">
+                <label for="dr5">Vegetarian</label><br>
+            </div> <br>-->
+            <div id="2">
+                <h3>Ingredients</h3>
+                <script>
+                    function addItem(){
+                        var li = document.createElement("LI");  
+                        var input = document.getElementById("add");
+                        li.innerHTML = input.value;
+                        input.value = "";
+                        document.getElementById("ingred").appendChild(li);
+                    }
+                </script>
+                <div id="clickMe" onclick="clickMe()">
+                    <div id="5">
+                        <ul id="ingred">
+                        </ul>
+                        <input type="text" id="add" size="50" />
+                        <input type="button" id="btnAdd" value="Add" class = sbutton
+                            onclick="addItem()">
+                        <br>
+                        <div id="7">
+                            <h3>Directions:</h3>
+                        <script>
+                            function addDirection(){
+                                var li = document.createElement("LI");  
+                                var input = document.getElementById("dirAdd");
+                                li.innerHTML = input.value;
+                                input.value = "";
+                        
+                                document.getElementById("direct").appendChild(li);
+                            }
+                        </script>
+                            <div id="clickMe" onclick="clickMe()">
+
+                            </div>
+                            <div id="6">
+                                <ul id="direct">
+
+                                </ul>
+                                <input type="text" id="dirAdd" size="50" />
+                                <input type="button" id="btnAdd" value="Add" class = "sbutton highlight-button"
+                                    onclick="addDirection()">
+                            </div>
+
+                         <br>
+                       <div id="8" >
+                        <input type="submit" class = "button highlight-button">
+                       </div>
+            </div>
+        </div>
+        </form>
+        <button id= "print">Print recipe</button>
+    </body>
+    <script src = "./Source/main.js"></script>
+    <script src = "./Source/print.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+</html>
