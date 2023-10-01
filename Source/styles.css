@@ -26,7 +26,9 @@ body{
     text-align: right;
     align-items: right;
 }
-
+.padd {
+    padding: 16px 16px;
+}
 .button{
     background-color: #fffee9;
     font-family: "Caveat";
@@ -45,6 +47,7 @@ body{
     height: 70px; /* Adjust the width and height as needed */
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
   }
 
   .sbutton{
@@ -58,6 +61,7 @@ body{
     display: inline-block;
     font-size: 12px;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
   }
 
 .selected {
@@ -69,16 +73,7 @@ body{
 }
 
 .back {
-    background-color: #878f8c;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    border-radius: 5px;
-    align-items: left;
+    text-decoration: none; /* Remove underlines from the link */
 }
 .pic {
     display: inline-block; /* Display the link as a block element */
@@ -88,4 +83,51 @@ body{
     width: 80px; /* Set the width of the container (adjust as needed) */
     height: 80px; /* Set the height of the container (adjust as needed) */
     /* Customize positioning using margin or positioning properties as needed */
+}
+
+
+
+
+
+/* CHAT GPT */
+
+
+/* Style for the container holding the checkboxes and labels */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for individual checkboxes */
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Add some spacing between checkbox and label */
+}
+
+/* Style for labels associated with checkboxes */
+.checkbox-container label {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-bottom: 5px; /* Add some spacing below each label */
+}
+
+/* Style for the checkboxes themselves */
+.checkbox-container input[type="checkbox"]::before {
+    content: "\2713"; /* Unicode checkmark symbol */
+    display: inline-block;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Style for checked checkboxes */
+.checkbox-container input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode checkmark symbol */
+    background-color: #007bff; /* Color for checked checkboxes */
+    color: #fff; /* Text color for checked checkboxes */
+    border: none; /* Remove border for checked checkboxes */
 }
