@@ -1,0 +1,204 @@
+.fixed {
+    position:fixed
+}
+.vertical {
+    border-left: 3px solid black;
+    height: 500px;
+    position: fixed; /* Change this to fixed */
+    left: 13%; /* Adjust this as needed */
+    top: 210px; /* Add this to position it at the top of the viewport */
+}
+.img {
+    position: fixed; /* Keep the images fixed */
+    display: inline-block; /* Make the link a block element */
+    left: 0%;
+    top: 5%; /* Adjust this value to position the image as needed */
+    width: 150px;
+    height: 150px;
+}
+/*Style for custom checkboxes and labels */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between checkbox items */
+}
+.checkbox-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+.custom-checkbox:checked::before {
+    content: ""; /* Remove content */
+    appearance: none; /* Remove default checkbox appearance */
+    width: 20px; /* Set the width of the custom checkbox */
+    height: 20px; /* Set the height of the custom checkbox */
+    border: 2px solid #ccc; /* Add border to the custom checkbox */
+    border-radius: 4px; /* Add border radius to the custom checkbox */
+    margin-right: 10px; /* Add spacing between checkbox and label */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Style for the link */
+.recipe-link {
+    text-align: center; /* Center-align the link text */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.recipe-link a {
+    text-decoration: none; /* Remove underlines from the link */
+    background-color: #ff6600; /* Background color for the button */
+    color: white; /* Text color for the button */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    display: inline-block; /* Make the link a block element */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.recipe-link a:hover {
+    background-color: #e55500; /* Change background color on hover */
+}
+.custom-checkbox:checked {
+    background-color: #007bff; /* Background color for checked custom checkbox */
+    border: 2px solid #007bff; /* Border color for checked custom checkbox */
+}
+
+.checkbox-item label {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+/* Remove the default checkmark */
+.custom-checkbox:checked::before {
+    content: ""; /* Remove content */
+}
+.img2 {
+    position: fixed; /* Keep the images fixed */
+    display: inline-block; /* Make the link a block element */
+    left: 87%;
+    top: 5%; /* Adjust this value to position the image as needed */
+    width: 150px;
+    height: 150px;
+}
+
+body{
+    background-color: #fffee9;
+    color: black;
+    font-family: "Caveat";
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+    align-items: left;
+}
+
+.right {
+    text-align: right;
+    align-items: right;
+}
+.padd {
+    padding: 16px 16px;
+}
+.button{
+    background-color: #fffee9;
+    font-family: "Caveat";
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    background-image: url('https://cdn.discordapp.com/attachments/1157409271781277696/1157772081660960919/Untitled-13.png?ex=6519d2c6&is=65188146&hm=4b12b0a6688234eb6d0a786d7c12d6d5b34bfe14c732e6ee857ff816c41dfd06');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180px; /* Adjust the width and height as needed */
+    height: 70px; /* Adjust the width and height as needed */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+  }
+
+  .sbutton{
+    background-color: #878f8c;
+    font-family: "Caveat";
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+  }
+
+.selected {
+    background-color: orange;
+}
+
+.highlight-button:hover {
+    color: #5c6360;
+}
+
+.back {
+    text-decoration: none; /* Remove underlines from the link */
+}
+.pic {
+    display: inline-block; /* Display the link as a block element */
+    background-image: url("https://cdn.discordapp.com/attachments/1157409271781277696/1157775687353106432/chef2.png"); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: contain; /* Adjust the image size to fit within the container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    width: 80px; /* Set the width of the container (adjust as needed) */
+    height: 80px; /* Set the height of the container (adjust as needed) */
+    /* Customize positioning using margin or positioning properties as needed */
+}
+
+
+
+
+
+/* CHAT GPT */
+
+
+/* Style for the container holding the checkboxes and labels */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for individual checkboxes */
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Add some spacing between checkbox and label */
+}
+
+/* Style for labels associated with checkboxes */
+.checkbox-container label {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-bottom: 5px; /* Add some spacing below each label */
+}
+
+/* Style for the checkboxes themselves */
+.checkbox-container input[type="checkbox"]::before {
+    content: "\2713"; /* Unicode checkmark symbol */
+    display: inline-block;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Style for checked checkboxes */
+.checkbox-container input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode checkmark symbol */
+    background-color: #007bff; /* Color for checked checkboxes */
+    color: #fff; /* Text color for checked checkboxes */
+    border: none; /* Remove border for checked checkboxes */
+}
